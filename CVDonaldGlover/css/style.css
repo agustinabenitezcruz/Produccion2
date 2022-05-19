@@ -1,0 +1,213 @@
+body{
+    display: flexbox;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.8), -5px 0px 10px rgba(0,0,0,0.8);
+    margin: 0% 10% 0% 10%;
+    contain: content;
+    background-color: rgb(2, 2, 2);
+}
+
+header{
+    margin: 5% 0% 5% 0%;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-self: center;
+    text-shadow: 2px 2px 4px violet, -2px -2px 4px greenyellow;
+    font-size: 64px;
+}
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(10, 10, 10);
+    text-shadow: 1px 1px 2px violet, -1px -1px 2px greenyellow;
+    font-size: 42px;
+}
+
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(10, 10, 10);
+    text-shadow: 0.5px 0.5px 1px violet, -0.5px -0.5px 1px greenyellow;
+    font-size: 30px;
+}
+
+h4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(10, 10, 10);
+    text-shadow: 0.5px 0.5px 1px violet, -0.5px -0.5px 1px greenyellow;
+    font-size: 26px;
+
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blanchedalmond;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+    color: blanchedalmond;
+    font-size: 18px;
+}
+
+.descripcion{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 240px 0px 0px;
+    
+    
+}
+
+.fotoCarnet{
+    max-height: 50%;
+    width: inherit;
+    margin-bottom: auto;
+    contain: content;
+}
+
+.fotoCarnet img{
+    max-width: 30%;
+    
+    
+}
+
+
+.menu{
+    margin: 5% 0% 5% 0%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu div{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    border: 1px violet;
+    box-shadow: 1px 1px 5px rgba(238,180,2380,0.5), -1px -1px 5px rgba(238,180,2380,0.5);
+    justify-content: center;
+    align-items: center;   
+}
+
+.menu div a{
+    align-self: center;
+}
+
+.menu div:hover{
+    background-color: blanchedalmond;
+}
+
+a{
+    color: violet;
+    font-size: 20px;
+    text-align: center;
+     
+}
+
+.tabla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blanchedalmond;
+    font-size: 18px;
+    border: solid 2px blanchedalmond;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+th{
+    border:solid 1px blanchedalmond;
+}
+
+td{
+    border: solid 1px blanchedalmond;
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenido div{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    contain: content;
+    margin: 30px 5px 5px 5px;
+    padding-top: 5px;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenido div img{
+    max-width: 50%;
+    align-self: center;
+}
+
+.contenido div:hover{
+    box-shadow:  1px 1px 5px rgba(238,180,2380,0.5), -1px -1px 5px rgba(238,180,2380,0.5);
+    max-width: 30%;
+}
+
+.album a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+}
+
+footer div{
+    max-width: 300px;
+    max-height: 100px;
+    contain: content;
+}
+
+footer div a img{
+    max-width: 10%;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+    .descripcion{
+        flex-direction: column;
+        padding: 0%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contenido div{
+        max-width: 40%;
+    }
+    
+}
+
+
+   
+
+
